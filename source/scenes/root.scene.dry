@@ -86,20 +86,19 @@ Q.pce_relation = 35;
 Q.erc_relation = 40;
 Q.prr_relation = 25;
 Q.pnv_relation = 30;
-Q.ceda_relation = 0;
+Q.an_relation = 0;
 
-Q.pce_leader = "Thälmann";
-// alternative is the Conciliators as party leader
-Q.pce_party_leader = "Thälmann";
-Q.leftrep_leader = "Brüning";
-// party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
-Q.leftrep_party_leader = "Marx";
-Q.ceda_leader = "Hitler";
+Q.pce_leader = "Bullejos";
+// alternative is José Díaz as party leader
+Q.pce_party_leader = "Bullejos";
+Q.leftrep_leader = "Azaña";
+Q.leftrep_party_leader = "Azaña";
+Q.an_leader = "Oria";
 
 // hmm... maybe we can play nice with Hindenburg???
-Q.hindenburg_relation = 25;
+Q.zamora_relation = 70;
 // whether or not hindenburg can dismiss the government.
-Q.hindenburg_enabled = 0;
+Q.zamora_enabled = 0;
 
 // The array of forces - paramilitary groups
 // Number of members in 1931 (in thousands)
@@ -117,17 +116,17 @@ Q.maoc_strength = 0;
 Q.maoc_militancy = 0;
 Q.maoc_banned = 0;
 
-Q.guardia_civil_strength = 50;
+Q.guardia_civil_strength = 30;
 Q.guardia_civil_militancy = 1;
-Q.guardia_civil_loyalty = 0.25;
+Q.guardia_civil_loyalty = 0.4;
 
 Q.guardia_asalto_strength = 0;
 Q.guardia_asalto_militancy = 0;
 Q.guardia_asalto_loyalty = 0;
 
-Q.carabineros_strength = 0;
-Q.carabineros_militancy = 0;
-Q.carabineros_loyalty = 0;
+Q.carabineros_strength = 15;
+Q.carabineros_militancy = 0.3;
+Q.carabineros_loyalty = 0.6;
 
 // strength includes actual military and de facto reserves?
 Q.army_strength = 100;
@@ -141,9 +140,9 @@ Q.army_loyalty = 0.2;
 // religion vs atheism
 Q.religion = 60;
 // socialism vs capitalism
-Q.socialism = 40;
+Q.socialism = 30;
 // pro-republic vs anti-republic
-Q.pro_republic = 59;
+Q.pro_republic = 70;
 // anarchism vs statism
 Q.anarchism = 10
 
@@ -158,7 +157,7 @@ Q.presidential_powers = 0;
 // allows banning of non-constitutional parties
 Q.constitutional_protection = 0;
 Q.pce_banned = 0;
-Q.ceda_banned = 0;
+Q.an_banned = 0;
 
 // coups and capital strikes happen when you upset the right or the capitalists too much with your policies. they're an additional check on your policies, when purely electoral checks don't suffice.
 // when coup_progress reaches 10 or capital_strike_progress reaches 10, there's a special event that launches the coup.
@@ -202,7 +201,7 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catalans', 'basques'];
-Q.parties = ['psoe', 'pce', 'leftrep', 'erc', 'prr', 'pnv', 'ceda', 'other'];
+Q.parties = ['psoe', 'pce', 'leftrep', 'erc', 'prr', 'pnv', 'an', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
@@ -212,7 +211,7 @@ Q.workers_leftrep = 5;
 Q.workers_erc = 0;
 Q.workers_prr = 0;
 Q.workers_pnv = 5;
-Q.workers_ceda = 0;
+Q.workers_an = 0;
 Q.workers_other = 10;
 
 Q.old_middle_psoe = 5;
@@ -221,7 +220,7 @@ Q.old_middle_leftrep = 5;
 Q.old_middle_erc = 10;
 Q.old_middle_prr = 25;
 Q.old_middle_pnv = 25;
-Q.old_middle_ceda = 10;
+Q.old_middle_an = 10;
 Q.old_middle_other = 10;
 
 Q.new_middle_psoe = 5;
@@ -230,7 +229,7 @@ Q.new_middle_leftrep = 10;
 Q.new_middle_erc = 25;
 Q.new_middle_prr = 25;
 Q.new_middle_pnv = 10;
-Q.new_middle_ceda = 5;
+Q.new_middle_an = 5;
 Q.new_middle_other = 15;
 
 Q.rural_psoe = 10;
@@ -239,7 +238,7 @@ Q.rural_leftrep = 5;
 Q.rural_erc = 5;
 Q.rural_prr = 15;
 Q.rural_pnv = 45;
-Q.rural_ceda = 5;
+Q.rural_an = 5;
 Q.rural_other = 10;
 
 Q.unemployed_psoe = 25;
@@ -248,7 +247,7 @@ Q.unemployed_leftrep = 1;
 Q.unemployed_erc = 0;
 Q.unemployed_prr = 0;
 Q.unemployed_pnv = 5;
-Q.unemployed_ceda = 15;
+Q.unemployed_an = 15;
 Q.unemployed_other = 9;
 
 Q.catalans_psoe = 15;
@@ -257,7 +256,7 @@ Q.catalans_leftrep = 50;
 Q.catalans_erc = 0;
 Q.catalans_prr = 5;
 Q.catalans_pnv = 5;
-Q.catalans_ceda = 0;
+Q.catalans_an = 0;
 Q.catalans_other = 12;
 
 Q.basques_psoe = 0;
@@ -266,7 +265,7 @@ Q.basques_leftrep = 0;
 Q.basques_erc = 0;
 Q.basques_prr = 0;
 Q.basques_pnv = 0;
-Q.basques_ceda = 0;
+Q.basques_an = 0;
 Q.basques_other = 0;
 
 
